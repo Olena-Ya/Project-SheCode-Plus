@@ -1,0 +1,94 @@
+.border-frame {
+  position: relative;
+  top: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 20px auto 5px;
+  padding: 20px;
+  background-color: white;
+  opacity: 70%3;
+}
+
+.calendar {
+  margin: 15px;
+  margin-left: 45px;
+  padding: 15px;
+}
+.heaven-icon {
+  font-size: 45px;
+  margin-left: 10px;
+}
+.icon {
+  line-height: 4;
+}
+.temperature-value {
+  font-size: 35px;
+}
+.city-name {
+  font-size: 40px;
+  padding-left: 25px;
+}
+.fa-location-dot {
+  position: relative;
+  top: -22px;
+}
+
+.weather-icon {
+  line-height: 3;
+  font-size: 25px;
+}
+.text-forecast {
+  padding: 10px auto;
+  line-height: 2;
+}
+.last-five-days {
+  text-align: center;
+}
+
+/* form {
+  text-align: center;
+} */
+
+body {
+  background: url(images/mal.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.first-line {
+  padding-top: 25px;
+}
+
+#grad-C {
+  text-decoration: none;
+  color: black;
+}
+
+#grad-F {
+  text-decoration: none;
+  color: #deebf2;
+}
+
+#separator {
+  color: #deebf2;
+}
+
+.submitRepo {
+  /* position: relative; */
+  top: 2px;
+  text-align: left;
+  color: white;
+  font-size: small;
+  max-width: 550px;
+  margin: 2px auto;
+  padding-left: 15px;
+}
+
+#submitRepo {
+  text-decoration: none;
+  color: white;
+}
