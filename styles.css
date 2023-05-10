@@ -1,3 +1,7 @@
+li {
+  list-style: none;
+  padding-left: 15px;
+}
 .border-frame {
   position: relative;
   top: 5px;
@@ -10,20 +14,17 @@
   opacity: 70%3;
 }
 
-.calendar {
-  margin: 15px;
-  margin-left: 45px;
-  padding: 15px;
-}
 .heaven-icon {
   font-size: 45px;
-  margin-left: 10px;
+  margin-right: 10px;
+  margin-left: -20px;
 }
 .icon {
   line-height: 4;
 }
 .temperature-value {
   font-size: 35px;
+  padding-top: 35px;
 }
 .city-name {
   font-size: 40px;
@@ -46,9 +47,18 @@
   text-align: center;
 }
 
-/* form {
-  text-align: center;
-} */
+.calendar .time {
+  margin: 15px;
+  margin-left: 45px;
+  padding: 15px;
+  padding-top: 60px;
+}
+.current-location {
+  padding-top: 70px;
+}
+form {
+  padding-bottom: 35px;
+}
 
 body {
   background: url(images/mal.jpg) no-repeat center center fixed;
@@ -91,4 +101,14 @@ body {
 #submitRepo {
   text-decoration: none;
   color: white;
+}
+
+#current-time {
+  margin: 0 auto;
+  padding-left: 5px;
+  /*    padding-top: -40px; */
+}
+.time {
+  padding-left: 35px;
+  /* padding-top: 5px; */
 }

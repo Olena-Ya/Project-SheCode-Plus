@@ -18,96 +18,148 @@
     ></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-   
-    
   </head>
   <body>
-    
- <div class="border-frame">
-    <div class="container">
+    <div class="border-frame">
+      <div class="container">
         <form id="search-city">
-        <div class="row">
-          <div class="col-1"></div>
-          <div class="col-7">
-             <input type="search" class="form-control shadow-sm" id="city-input" autofocus="on"  placeholder="Enter City">   
-          </div>
-          <div class="col-2">
-                <input type="submit" class="btn btn-primary shadow-sm" value="Search">
-          </div>
-          <div class="col-1">
-                <button  id="get-position" class="btn btn-outline-primary">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-7">
+              <input
+                type="search"
+                class="form-control shadow-sm"
+                id="city-input"
+                autofocus="on"
+                placeholder="Enter City"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                class="btn btn-primary shadow-sm"
+                value="Search"
+              />
+            </div>
+            <div class="col-1">
+              <button id="get-position" class="btn btn-outline-primary">
                 <i class="fa-solid fa-location-arrow"></i>
-                </button>
-          </div>
-      </div>
-    </form>
-    
-    <div class="row align-items-center">
-      <div class="col-6">
-        <div class="calendar">
-          <div>
-            <i class="fa-solid fa-calendar-days icon"></i>
-            <span id="day-of-week">Monday </span> 
-            <span id="current-time"> 08:00</span> 
-          </div>
-          <!-- <i class="fa-solid fa-temperature-low icon"></i> -->
-          <span class="temperature-value"> 
-            <span id="temperature-value">17</span>°<a href="#" id="grad-C"> C </a><span id="separator">|</span> <a href="#" id="grad-F">F</a>
-            <div class="heaven-icon">
-              <i class="fa-solid fa-sun"></i>
+              </button>
             </div>
+          </div>
+        </form>
+
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="calendar">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-calendar-days icon"></i>
+                  <span id="day-of-week">Monday </span>
+                </li>
+                <small
+                  ><small>
+                    <li>Humidity:</li>
+                    <li>Wind spead:</li>
+                  </small>
+                </small>
+                <li>
+                  <div class="d-flex temperature-value">
+                    <div class="heaven-icon">
+                      <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div>
+                      <span id="temperature-value">17</span>°<a
+                        href="#"
+                        id="grad-C"
+                      >
+                        C </a
+                      ><span id="separator">|</span>
+                      <a href="#" id="grad-F">F</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- <div>
+              <i class="fa-solid fa-calendar-days icon"></i>
+              <span id="day-of-week">Monday </span> 
+              <span id="current-time"> 08:00</span> 
+            </div> -->
+              <!-- <i class="fa-solid fa-temperature-low icon"></i> -->
+            </div>
+          </div>
+
+          <div class="col-6">
+            <ul>
+              <div class="time">
+                <li>
+                  <i class="fa-solid fa-clock"></i
+                  ><span id="current-time"> 08:00</span>
+                </li>
+              </div>
+              <li>
+                <div class="current-location">
+                  <!-- <i class="fa-solid fa-location-dot"></i> -->
+                  <span class="city-name" id="city-name"> Kyiv </span>
+                </div>
+              </li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
         </div>
-        
-        <div class="col-6 ">
-          <div class="current-location">
-            <i class="fa-solid fa-location-dot"></i> <span class="city-name" id="city-name"> Kyiv </span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="test">
-        <div class="row last-five-days mt-3 mb-1 border-dark border-top">
-          <!-- 1st auxilary column -->
-          <div class="col-1"></div>
-          <div class="col-10">
-            <div class="row row-cols-5 text-forecast first-line">
-              <div class="col">Tue</div>
-              <div class="col">Wed</div>
-              <div class="col">Thu</div>
-              <div class="col">Fri</div>
-              <div class="col">Sat</div>
-            </div>
-            
-            <div class="row row-cols-5 text-forecast">
-              <div class="col">9°C</div>
-              <div class="col">11°C</div>
-              <div class="col">12°C</div>
-              <div class="col">18°C</div>
-              <div class="col">15°C</div>
-            </div>
-            
-            <div class="row row-cols-5 weather-icon">
-              <div class="col"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-              <div class="col"><i class="fa-solid fa-sun"></i></div>
-              <div class="col"><i class="fa-solid fa-cloud-sun"></i></div>
-              <div class="col"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-              <div class="col"><i class="fa-solid fa-sun"></i></div>
+
+        <div class="test">
+          <div class="row last-five-days mt-3 mb-1 border-dark border-top">
+            <!-- 1st auxilary column -->
+            <div class="col-1"></div>
+            <div class="col-10">
+              <div class="row row-cols-5 text-forecast first-line">
+                <div class="col">Tue</div>
+                <div class="col">Wed</div>
+                <div class="col">Thu</div>
+                <div class="col">Fri</div>
+                <div class="col">Sat</div>
+              </div>
+
+              <div class="row row-cols-5 text-forecast">
+                <div class="col">9°C</div>
+                <div class="col">11°C</div>
+                <div class="col">12°C</div>
+                <div class="col">18°C</div>
+                <div class="col">15°C</div>
+              </div>
+
+              <div class="row row-cols-5 weather-icon">
+                <div class="col">
+                  <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+                <div class="col"><i class="fa-solid fa-sun"></i></div>
+                <div class="col"><i class="fa-solid fa-cloud-sun"></i></div>
+                <div class="col">
+                  <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+                <div class="col"><i class="fa-solid fa-sun"></i></div>
+              </div>
             </div>
           </div>
+
+          <!-- div container    -->
         </div>
-        
-        <!-- div container    -->
+        <!-- div border frame    -->
       </div>
-      <!-- div border frame    -->
+      <script src="script.js"></script>
     </div>
-    <script src ="script.js">
-      
-    </script>
-  </div>  
-  <div class="submitRepo">
-    <a href="https://github.com/Olena-Ya/sheCodesPlus.git" id="submitRepo" target="_blank" rel="noreferrer">Coded by</a> Olena Yakovlieva  
-  </div>
-   </body>
-   </html>
-   
+    <div class="submitRepo">
+      <a
+        href="https://github.com/Olena-Ya/sheCodesPlus.git"
+        id="submitRepo"
+        target="_blank"
+        rel="noreferrer"
+        >Coded by</a
+      >
+      Olena Yakovlieva
+    </div>
+  </body>
+</html>
