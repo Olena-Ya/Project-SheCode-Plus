@@ -1,3 +1,11 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 li {
   list-style: none;
   padding-left: 15px;
@@ -15,7 +23,7 @@ li {
   margin: 20px auto 5px;
   padding: 20px;
   background-color: white;
-  opacity: 70%3;
+  opacity: 65%;
 }
 
 .heaven-icon {
@@ -65,18 +73,23 @@ form {
 }
 
 body {
-  background: url(images/mal.jpg) no-repeat center center fixed;
+  /* background: url(images/mal.jpg) no-repeat center center fixed; */
+  /* background: url(images/video.mp4) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 80%;
+  opacity: 80%; */
 }
 
 .first-line {
   padding-top: 25px;
 }
-
+#separator {
+  position: relative;
+  font-size: 20px;
+  top: -10px;
+}
 #grad-C,
 #grad-F {
   position: relative;
