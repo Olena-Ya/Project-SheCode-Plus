@@ -20,19 +20,22 @@ li {
 
 .heaven-icon {
   font-size: 45px;
-  margin-right: 10px;
-  margin-left: -5px;
+  margin-left: -25px;
+}
+.units {
+  padding-top: 25px;
+  padding-left: -15px;
 }
 .icon {
   line-height: 4;
   padding-bottom: 20px;
 }
-.temperature-value {
+#temperature-value {
   font-size: 35px;
-  padding-top: 35px;
+  /* padding-top: 35px; */
 }
 .city-name {
-  font-size: 40px;
+  font-size: 35px;
   /* padding-left: 25px; */
   text-align: center;
 }
@@ -74,18 +77,33 @@ body {
   padding-top: 25px;
 }
 
-#grad-C {
+#grad-C,
+#grad-F {
+  position: relative;
+  font-size: 20px;
+  top: -10px;
   text-decoration: none;
-  color: black;
+
+  position: relative;
+  right: 2px;
 }
 
 #grad-F {
-  text-decoration: none;
-  color: #deebf2;
+  left: -5px;
 }
 
-.temperature-value .test {
-  position: relative;
+.active {
+  text-decoration: none;
+  cursor: default;
+  color: black;
+}
+.active:hover {
+  text-decoration: none;
+}
+
+.inactive {
+  color: black;
+  opacity: 30%;
 }
 
 #separator {
