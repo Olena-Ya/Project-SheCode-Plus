@@ -72,6 +72,7 @@ function showTemperature(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   descriptionElement.innerHTML = response.data.condition.description;
   wetherIconElement.setAttribute("src", response.data.condition.icon_url);
+  wetherIconElement.setAttribute("alt", response.data.condition.description);
   lastUpdatedTime.innerHTML = formatDate(response.data.time * 1000);
 }
 
