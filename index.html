@@ -56,16 +56,16 @@
 
         <!-- // -->
         <div class="row align-items-center">
-          <div class="col-6">
-            <ul>
+          <div class="col-12">
+            <div class="text-wrap">
               <small
                 ><small>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind spead: <span id="wind"></span> km/h</li>
-                  <li><span id="weather-description"></span></li>
+                  <span>Humidity: <span id="humidity"></span>%</span> |
+                  <span>Wind spead: <span id="wind"></span> km/h</span> |
+                  <span><span id="weather-description"></span></span>
                 </small>
               </small>
-            </ul>
+            </div>
           </div>
 
           <div class="col-6"></div>
@@ -101,15 +101,17 @@
 
         <div class="row align-items-center">
           <div class="col-12">
-            <small>
+            <div class="text-wrap">
               <small>
-                <span id="last-updated">Last updated: </span>
-                <span id="last-updated-time">
-                  <span id="day-of-week">Monday </span>
-                  <span id="current-time">08:00</span>
-                </span>
+                <small>
+                  <span id="last-updated">Last updated: </span>
+                  <span id="last-updated-time">
+                    <span id="day-of-week">Monday </span>
+                    <span id="current-time">08:00</span>
+                  </span>
+                </small>
               </small>
-            </small>
+            </div>
           </div>
         </div>
 
@@ -147,22 +149,25 @@
               </div>
             </div>
           </div>
-
-          <!-- div container    -->
         </div>
-        <!-- div border frame    -->
+        <div class="submitRepo">
+          <small>
+            <small>
+              <a
+                href="https://github.com/Olena-Ya/sheCodesPlus.git"
+                id="submitRepo"
+                target="_blank"
+                rel="noreferrer"
+                >Coded by</a
+              >
+              Olena Yakovlieva
+            </small>
+          </small>
+        </div>
+        <!-- div container    -->
       </div>
-      <script src="script.js"></script>
+      <!-- div border frame    -->
     </div>
-    <div class="submitRepo">
-      <a
-        href="https://github.com/Olena-Ya/sheCodesPlus.git"
-        id="submitRepo"
-        target="_blank"
-        rel="noreferrer"
-        >Coded by</a
-      >
-      Olena Yakovlieva
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>

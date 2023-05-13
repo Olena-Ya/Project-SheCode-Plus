@@ -13,6 +13,10 @@ li {
 
 .col-12 {
   padding-left: 60px;
+  margin: auto auto;
+}
+.text-wrap {
+  text-align: center;
 }
 .border-frame {
   position: relative;
@@ -22,6 +26,7 @@ li {
   max-width: 550px;
   margin: 20px auto 5px;
   padding: 20px;
+  padding-bottom: 4px;
   background-color: white;
   opacity: 65%;
 }
@@ -131,17 +136,17 @@ body {
 .submitRepo {
   /* position: relative; */
   top: 2px;
+
   text-align: left;
-  color: white;
+  color: black;
   font-size: small;
   max-width: 550px;
   margin: 2px auto;
-  padding-left: 15px;
 }
 
 #submitRepo {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #current-time #day-of-week {
