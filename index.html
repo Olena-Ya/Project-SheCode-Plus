@@ -20,10 +20,9 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
-
-<video autoplay muted loop id="myVideo">
-  <source src="images/video2.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="myVideo">
+      <source src="images/video2.mp4" type="video/mp4" />
+    </video>
 
     <div class="border-frame">
       <div class="container">
@@ -54,7 +53,6 @@
           </div>
         </form>
         <!-- // -->
-       
 
         <!-- // -->
         <div class="row align-items-center">
@@ -62,48 +60,46 @@
             <ul>
               <small
                 ><small>
-                  <li>Humidity: <span id="humidity"></span></span>%</li>
-                  <li>Wind spead: <span id="wind"></span></span> km/h</li>
-                  
-                  <li> <span id="weather-description"></span></li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind spead: <span id="wind"></span> km/h</li>
+                  <li><span id="weather-description"></span></li>
                 </small>
               </small>
-              <li>
-                <div class="d-flex temperature-value">
-                  <div class="heaven-icon">
-                    <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png" alt="" id="heaven-icon" >
-                    <!-- <i class="fa-solid fa-sun"></i> -->
-                  </div>
-                  <div class="units">
-                    <span id="temperature-value">17</span><a
-                      href="#"
-                      id="grad-C"
-                      class = "active"
-                    > °C</a
-                    ><span id="separator">|</span>
-                    <a href="#" id="grad-F" class = "inactive">°F</a>
-                  </div>
-                </div>
-              </li>
             </ul>
           </div>
 
+          <div class="col-6"></div>
+        </div>
+
+        <!-- //test -->
+        <div class="row align-items-center">
           <div class="col-6">
-            <ul>
-              <li>
-                <div class="current-location">
-                  <!-- <i class="fa-solid fa-location-dot"></i> -->
-                  <span class="city-name" id="city-name"> Kyiv </span>
-                </div>
-              </li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div class="d-flex temperature-value">
+              <div class="heaven-icon">
+                <img
+                  src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+                  alt=""
+                  id="heaven-icon"
+                />
+              </div>
+              <div class="units">
+                <span id="temperature-value">17</span
+                ><a href="#" id="grad-C" class="active"> °C</a
+                ><span id="separator">|</span>
+                <a href="#" id="grad-F" class="inactive">°F</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="current-location">
+              <span class="city-name" id="city-name"> Kyiv </span>
+            </div>
           </div>
         </div>
 
+        <!-- //test -->
 
- <div class="row align-items-center">
+        <div class="row align-items-center">
           <div class="col-12">
             <small>
               <small>
@@ -117,14 +113,7 @@
           </div>
         </div>
 
-
-
-
-
-
-
-
-        <div >
+        <div>
           <div class="row last-five-days mt-3 mb-1 border-dark border-top">
             <!-- 1st auxilary column -->
             <div class="col-1"></div>

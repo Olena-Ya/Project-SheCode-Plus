@@ -28,7 +28,7 @@ li {
 
 .heaven-icon {
   font-size: 45px;
-  margin-left: -25px;
+  margin: auto auto;
 }
 .units {
   padding-top: 25px;
@@ -40,12 +40,13 @@ li {
 }
 #temperature-value {
   font-size: 35px;
-  /* padding-top: 35px; */
 }
+
 .city-name {
   font-size: 35px;
   /* padding-left: 25px; */
-  text-align: center;
+  /* text-align: center; */
+  margin: auto auto;
 }
 .fa-location-dot {
   position: relative;
@@ -67,6 +68,7 @@ li {
 .current-location {
   padding: auto auto;
   word-wrap: break-word;
+  text-align: center;
 }
 form {
   padding-bottom: 35px;
