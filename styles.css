@@ -2,6 +2,10 @@ li {
   list-style: none;
   padding-left: 15px;
 }
+
+.col-12 {
+  padding-left: 60px;
+}
 .border-frame {
   position: relative;
   top: 5px;
@@ -17,10 +21,11 @@ li {
 .heaven-icon {
   font-size: 45px;
   margin-right: 10px;
-  margin-left: -20px;
+  margin-left: -5px;
 }
 .icon {
   line-height: 4;
+  padding-bottom: 20px;
 }
 .temperature-value {
   font-size: 35px;
@@ -28,7 +33,8 @@ li {
 }
 .city-name {
   font-size: 40px;
-  padding-left: 25px;
+  /* padding-left: 25px; */
+  text-align: center;
 }
 .fa-location-dot {
   position: relative;
@@ -47,14 +53,9 @@ li {
   text-align: center;
 }
 
-.calendar .time {
-  margin: 15px;
-  margin-left: 45px;
-  padding: 15px;
-  padding-top: 60px;
-}
 .current-location {
-  padding-top: 70px;
+  padding: auto auto;
+  word-wrap: break-word;
 }
 form {
   padding-bottom: 35px;
@@ -110,16 +111,22 @@ body {
   color: white;
 }
 
-#current-time {
-  margin: 0 auto;
-  padding-left: 5px;
-  /*    padding-top: -40px; */
+#current-time #day-of-week {
+  /* margin: 0 auto; */
+  padding-left: 30px;
 }
-.time {
-  padding-left: 0;
-  /* padding-top: 5px; */
+
+#last-updated {
+  font-weight: bold;
 }
 
 .location-sign {
   margin-left: 12px;
+}
+#weather-description {
+  display: inline-block;
+}
+
+#weather-description:first-letter {
+  text-transform: uppercase;
 }

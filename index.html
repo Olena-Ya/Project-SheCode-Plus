@@ -48,58 +48,42 @@
             </div>
           </div>
         </form>
+        <!-- // -->
+       
 
+        <!-- // -->
         <div class="row align-items-center">
           <div class="col-6">
-            <div class="calendar">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-calendar-days icon"></i>
-                  <span id="day-of-week">Monday </span>
-                </li>
-                <small
-                  ><small>
-                    <li>Humidity:</li>
-                    <li>Wind spead:</li>
-                  </small>
+            <ul>
+              <small
+                ><small>
+                  <li>Humidity: <span id="humidity"></span></span>%</li>
+                  <li>Wind spead: <span id="wind"></span></span> km/h</li>
+                  
+                  <li> <span id="weather-description"></span></li>
                 </small>
-                <li>
-                  <div class="d-flex temperature-value">
-                    <div class="heaven-icon">
-                      <i class="fa-solid fa-sun"></i>
-                    </div>
-                    <div>
-                      <span id="temperature-value">17</span>°<a
-                        href="#"
-                        id="grad-C"
-                      >
-                        C </a
-                      ><span id="separator">|</span>
-                      <a href="#" id="grad-F">F</a>
-                    </div>
+              </small>
+              <li>
+                <div class="d-flex temperature-value">
+                  <div class="heaven-icon">
+                    <i class="fa-solid fa-sun"></i>
                   </div>
-                </li>
-              </ul>
-
-              <!-- <div>
-              <i class="fa-solid fa-calendar-days icon"></i>
-              <span id="day-of-week">Monday </span> 
-              <span id="current-time"> 08:00</span> 
-            </div> -->
-              <!-- <i class="fa-solid fa-temperature-low icon"></i> -->
-            </div>
+                  <div>
+                    <span id="temperature-value">17</span>°<a
+                      href="#"
+                      id="grad-C"
+                    >
+                      C </a
+                    ><span id="separator">|</span>
+                    <a href="#" id="grad-F">F</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div class="col-6">
             <ul>
-              <div class="time">
-                <li>
-                  <i class="fa-solid fa-clock"></i>
-                  <small>
-                    <small> <span>Last updated: </span></small> </small
-                  ><span id="current-time"> 08:00</span>
-                </li>
-              </div>
               <li>
                 <div class="current-location">
                   <!-- <i class="fa-solid fa-location-dot"></i> -->
@@ -112,7 +96,29 @@
           </div>
         </div>
 
-        <div class="test">
+
+ <div class="row align-items-center">
+          <div class="col-12">
+            <small>
+              <small>
+                <span id="last-updated">Last updated: </span>
+                <span id="last-updated-time">
+                  <span id="day-of-week">Monday </span>
+                  <span id="current-time">08:00</span>
+                </span>
+              </small>
+            </small>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div >
           <div class="row last-five-days mt-3 mb-1 border-dark border-top">
             <!-- 1st auxilary column -->
             <div class="col-1"></div>
