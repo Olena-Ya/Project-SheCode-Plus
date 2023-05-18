@@ -45,6 +45,63 @@ function formatDate(timestamp) {
   return `${nameOfDayOfWeek}  ${currentTime}   ${date}.${month}.${year}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let dayOfWeek = date.getDay();
+  let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return daysOfWeek[dayOfWeek];
+}
+
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.daily;
+  let date = new Date(response.data.daily[0].time * 1000);
+  let dayOfWeek = date.getDay();
+  let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let nameOfDayOfWeek = daysOfWeek[dayOfWeek];
+
+  // let forecastDailyHTML;
+  forecastDailyHTML = `<div class="row">`;
+
+  // forecastDailyHTML = forecastDailyHTML + ` <div class="col-1"></div> `;
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      console.log(index);
+      forecastDailyHTML =
+        forecastDailyHTML +
+        ` <div class="col-2">
+  <div class="col">${formatDay(forecastDay.time)}</div>
+  <img
+  src=${forecastDay.condition.icon_url}
+  alt=${forecastDay.condition.description}
+  id="forecast-heaven-icon"
+  width="65"
+  />
+  <div class="center">
+  <span class="max">${Math.round(
+    forecastDay.temperature.maximum
+  )}°</span> <span class="min">${Math.round(
+          forecastDay.temperature.minimum
+        )}°</span>
+  </div>
+  </div>`;
+    }
+  });
+
+  // console.log(forecastDailyHTML);
+  forecastDailyHTML = forecastDailyHTML + `</div>`;
+  forecastElement.innerHTML = forecastDailyHTML;
+}
+
+function getForecast(city) {
+  console.log(city);
+  let apiKey = "a1585c05669d0tf0ba920b3fae4oe637";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 //when a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
 
 function searchCity(SearchInput) {
@@ -74,6 +131,7 @@ function showTemperature(response) {
   wetherIconElement.setAttribute("src", response.data.condition.icon_url);
   wetherIconElement.setAttribute("alt", response.data.condition.description);
   lastUpdatedTime.innerHTML = formatDate(response.data.time * 1000);
+  getForecast(response.data.city);
 }
 
 function handlePosition(position) {

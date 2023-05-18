@@ -131,14 +131,11 @@ body {
 }
 
 .submitRepo {
-  /* position: relative; */
-  top: 2px;
-
   text-align: left;
   color: black;
   font-size: small;
   max-width: 550px;
-  margin: 2px auto;
+  margin: 10px 2px auto;
 }
 
 #submitRepo {
@@ -174,4 +171,21 @@ body {
 
 .center {
   text-align: center;
+}
+
+.min {
+  color: black;
+  opacity: 30%;
+}
+.col {
+  text-align: center;
+  padding-top: 25px;
+}
+
+#forecast {
+  text-align: center;
+}
+
+.min .max {
+  font-size: 12px;
 }
