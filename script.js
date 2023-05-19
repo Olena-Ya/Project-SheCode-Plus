@@ -62,11 +62,11 @@ function displayForecast(response) {
   let nameOfDayOfWeek = daysOfWeek[dayOfWeek];
 
   // let forecastDailyHTML;
-  forecastDailyHTML = `<div class="row">`;
+  forecastDailyHTML = `<div class="row"><div class="col-1"></div>`;
 
   // forecastDailyHTML = forecastDailyHTML + ` <div class="col-1"></div> `;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       console.log(index);
       forecastDailyHTML =
         forecastDailyHTML +
