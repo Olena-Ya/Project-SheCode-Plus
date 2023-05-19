@@ -28,7 +28,7 @@ li {
   padding: 20px;
   padding-bottom: 4px;
   background-color: white;
-  opacity: 65%;
+  opacity: 75%;
 }
 
 .heaven-icon {
@@ -75,16 +75,6 @@ li {
 }
 form {
   padding-bottom: 35px;
-}
-
-body {
-  /* background: url(images/mal.jpg) no-repeat center center fixed; */
-  /* background: url(images/video.mp4) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 80%; */
 }
 
 .first-line {

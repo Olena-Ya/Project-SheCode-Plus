@@ -35,6 +35,16 @@ function formatDate(timestamp) {
     currentTimeHours = `0${currentTimeHours}`;
   }
 
+  videoOfBackgroundElement = document.querySelector("#myVideo");
+  if (
+    currentTimeHours > 19 ||
+    (currentTimeHours >= 0 && currentTimeHours < 6)
+  ) {
+    videoOfBackgroundElement.setAttribute("src", "images/video_night.mp4");
+  } else {
+    videoOfBackgroundElement.setAttribute("src", "images/video2.mp4");
+  }
+
   let currentTimeMinutes = currentDay.getMinutes();
   if (currentTimeMinutes < 10) {
     currentTimeMinutes = `0${currentTimeMinutes}`;
