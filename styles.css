@@ -129,6 +129,10 @@ form {
   margin: 10px 2px auto;
 }
 
+.coded-by {
+  color: blue !important;
+}
+
 #submitRepo {
   text-decoration: none;
   color: black;

@@ -23,7 +23,7 @@ function formatDate(timestamp) {
     date = `0${date}`;
   }
 
-  let month = currentDay.getMonth();
+  let month = currentDay.getMonth() + 1;
   if (month < 10) {
     month = `0${month}`;
   }
